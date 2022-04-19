@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\Worker;
 use App\Models\Shift;
-
+use App\Traits\ShiftTrait;
+use DB;
 class Shiftcontroller extends Controller
 {
     /**
@@ -46,7 +46,11 @@ class Shiftcontroller extends Controller
      */
     public function index(Worker $worker)
     {
-        return Shift::all();
+        $shift = Shift::all();
+        if (count($shift)==null) {
+            return ["message"=>"no worker has been added"];
+            # code...
+        }else {return $shift;}
       
     }
 

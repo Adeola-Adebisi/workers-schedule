@@ -9,11 +9,18 @@ use DB;
 
 
 /**
- * @OA\Info(
- *      version="1.0.0",
- *      title="L5 OpenApi",
- *      description="L5 Swagger OpenApi description"
- * ),
+     *      @OA\Info(
+     *      version="1.0.0",
+     *       title="Workers Schedule OpenApi Demo Documentation",
+     *      description="This API generates three shifts per day for workers, a worker cannot have more than one shift per day, it also ensures all workers get same shift distributiondescription",
+     *      @OA\Contact(
+     *      email="adeolaadebisi001@gmailadmin@admin.com"
+     *      ),
+     *      @OA\License(
+     *          name="Apache 2.0",
+     *          url="http://www.apache.org/licenses/LICENSE-2.0.html"
+     *      ),
+     *),
  * @OA\SecurityScheme(
      *       scheme="Bearer",
      *       securityScheme="sanctum",

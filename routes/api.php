@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Worker;
 use App\Http\Controllers\WorkerController;
-use App\Http\Controllers\ShiftController;
+use App\Http\Controllers\ShiftsController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
@@ -30,7 +30,7 @@ Route::post('/logout', [LogoutController::class, 'logout'])->name('worker.logout
 //public access
 
 Route::get('/workers', [WorkerController::class, 'index'])->name('worker.index');
-Route::get('/shifts', [ShiftController::class, 'index'])->name('worker.index');
+Route::get('/shifts', [ShiftsController::class, 'index'])->name('worker.index');
 Route::post('/register', [RegisterController::class, 'create'])->name('worker.create');
 Route::post('/login', [LoginController::class, 'login'])->name('worker.login');
 //protected access

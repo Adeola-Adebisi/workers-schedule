@@ -6,15 +6,16 @@ use App\Models\Worker;
 use App\Models\Shift;
 use App\Traits\ShiftTrait;
 use DB;
-class Shiftcontroller extends Controller
+
+class ShiftsController extends Controller
 {
-    /**
+   /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
      /**
-     * @OA\Get(
+     *     @OA\Get(
      *     path="/api/shifts",
      *     operationId="shiftTable",
      *      tags={"Shift for workers"},

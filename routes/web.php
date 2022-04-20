@@ -27,4 +27,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
-Route::get('/shift', [App\Http\Controllers\ShiftController::class, 'index'])->name('index');
+Route::get('/shift', [App\Http\Controllers\ShiftsController::class, 'index'])->name('index');

@@ -14,7 +14,7 @@ use DB;
      *       title="Workers Schedule OpenApi Demo Documentation",
      *      description="This API generates three shifts per day for workers, a worker cannot have more than one shift per day, it also ensures all workers get same shift distributiondescription",
      *      @OA\Contact(
-     *      email="adeolaadebisi001@gmailadmin@admin.com"
+     *      email="adeolaadebisi001@gmail.com"
      *      ),
      *      @OA\License(
      *          name="Apache 2.0",
